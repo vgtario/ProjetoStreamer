@@ -1,0 +1,269 @@
+body {font-family: "Lato", sans-serif; /* fonte do texto*/
+   background-color: #030f1d; 
+   margin: 0;
+   padding: 0;
+   /* background: linear-gradient(#0f233a,#4a6d94 );*/
+      /* margin: 0; /* Remover margens para alinhar o site ao topo */
+    /*overflow-x: hidden;  Ocultar a barra de rolagem horizontal */
+}
+
+h1  {text-align: center;
+    padding: 0; 
+    font-size: 45px;
+}
+
+h1, h2, h3 {
+    color: #fff;
+} 
+
+h2, h3 {
+    margin: 15px;
+}
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    }
+    
+    #logo{
+        height: 130px;
+        width: 130px;
+      /* Ajuste a posição da logo conforme necessário */
+    }
+
+
+/*
+#logotipo {
+    padding-left: 72%;
+   
+}
+*/
+
+/*div da aba de pesquisa
+.box-busca { 
+    text-align: center;
+    display: flex; /*alinhar os elementos em uma linha
+ }
+/*aba de pesquisa
+.search-input { 
+   text-align: center
+} */
+
+/*.botao1 {/*botao da aba de pesquisa
+    padding: 8px 16px; /*As proporçõesdo botão
+    } */
+
+    /* Estilização do container da barra de pesquisa */
+.box-busca {
+    text-align: center;
+    
+}
+
+/* Estilização do campo de entrada de texto para a pesquisa */
+.search-input {
+    padding: 8px; /* Adiciona um espaçamento interno ao redor do campo de entrada */
+    border: 3px solid #000000; /* Adiciona uma borda de 1px com cor cinza (#ccc) */
+    border-radius: 5px; /* Adiciona bordas arredondadas com um raio de 5px */
+    font-size: 16px; /* Define o tamanho da fonte do texto do campo de entrada */
+    width: 65%; /* A caixa de pesquisa ocupará a largura total do contêiner */
+}
+
+/* Estilização do botão de pesquisa */
+.search-button {
+    background-color: #2b5581; /* Define a cor de fundo do botão para um azul (#007bff) */
+    border: none; /* Remove a borda do botão */
+    padding: 8px; /* Adiciona um espaçamento interno ao redor do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas com um raio de 5px */
+    cursor: pointer; /* Transforma o cursor do mouse em uma mãozinha quando passar sobre o botão */
+}
+
+/* Estilização do ícone de lupa dentro do botão de pesquisa */
+.search-button img {
+    width: 20px; 
+    height: 20px; 
+    display: block; /* Define o ícone como um elemento de bloco (alinhado verticalmente) */
+}
+
+
+/*aba de navegação*/    
+.Menuoculto {
+height: 100%; /*altura da janela, aqui no caso ela ocupa toda a janela, height:100%*/
+width: 0px; /*largura 0, para não mostrar a aba, quando for entrar no site, ela se mantem oculta*/
+position: fixed;
+z-index: 1;
+top: 0; /*para o coteudo da aba menu oculto se manter no topo da pagina*/
+left: 0; /*para fixar o menu na esquerda*/
+background-color: #103050; /*por algum motivo, se eu tentar colocar um gradient aqui, o blacground some*/
+overflow-x: hidden; /*Para não mostrar a aba de rolagem no eixo x*/
+transition: 0.5s; /*tempo de animação do menu*/
+padding-top: 60px;
+}
+
+/*formatação dos links, "botões"*/
+.Menuoculto a { 
+padding: 8px 8px 8px 32px; /*margem a esquerda*/
+text-decoration: none; /*sem decoração, sem o sublinhado do propio link*/
+font-size: 25px; /*tamanho da fonte*/
+color:#fff; 
+display: block; /* ficar um embaixo do outro, transformar os linsk inline em blocs*/
+transition: 0.3s;
+}
+
+/*cursor do mouse?*/
+.Menuoculto a:hover{ 
+    color: #007bff;
+}
+
+/*formatando o botar fechar*/
+.btnFechar { 
+    position: absolute; /*Setar uma posição fixa no botão*/
+    top: 0;
+right: 25px; /* top e right, posição do botão*/ 
+font-size: 36px;
+margin-left: 50px;
+}
+
+/*botão de abrir a aba de navegação*/
+#principal {
+    padding: 16px; /*Tipo a margem*/
+    transition: margin-left 0.5; /*transição, porem ela está desabilitada*/
+    color: #fff;
+    text-align: center;
+    
+}
+
+/*.galery {
+    width: 640px; /* width e height corresponde ao tamanho da imagem 1280 POR 220
+    height: 360px;
+    overflow: hidden; /*presetar o tamanho de acordo com a escala a cima
+    margin: 0 auto; /* Adicionando esta linha para centralizar horizontalmente
+}*/
+
+.galery {
+    max-width: 100%; /* Definir a largura máxima do carrossel */
+    height: auto; /* A altura será ajustada automaticamente com base no tamanho das imagens */
+    overflow: hidden;
+    margin: 0 auto; /* Centralizar o carrossel horizontalmente */
+    max-height: 360px; /* Definir uma altura máxima para o carrossel */
+}
+
+/*a caixa das imagens*/
+.galery .fotos {
+    width: 500%; /*equivale ao tamnho e a quantidade das fotos?*/
+    animation-name: animaçao; /* mome da animação*/
+    animation-duration: 20s; /*duração da animação*/
+    animation-iteration-count: infinite; /*contagem da animação*/
+    display: flex; /* define como um ítem será posicionado para no espaço disponível dentro de seu container. */
+    }
+
+/*as imagens da caixa 
+.galery .fotos img {
+    width: 19.9%;
+   }*/
+
+   .galery .fotos img {
+    width: 100%; /* Ajustar a largura da imagem para ocupar todo o espaço disponível */
+    height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+    object-fit: cover; /* Garantir que a imagem preencha completamente o contêiner sem distorção */
+}
+
+
+/* .container {
+    width: 100%; /* Definir a largura do conteúdo para 100% da largura da tela 
+    max-width: 1200px; /* Definir uma largura máxima para o conteúdo 
+    margin: 0 auto; /* Centralizar o conteúdo horizontalmente 
+    padding: 20px;  Adicionar espaçamento ao redor do conteúdo 
+} */
+
+
+.row {
+    display: flex; /*o display trabalha com comandos em blocos, junto do flex ele permit alinhar os blocos em uma linha*/
+    flex-wrap: wrap; /* O valor "nowrap" indica que os elementos não devem quebrar para a próxima linha, eles devem permanecer em uma única linha.*/
+}
+
+.col {
+    flex: 1; /* Fazer as colunas ocuparem espaço igualmente */
+    padding: 13px; /* Adicionar espaçamento entre as imagens */
+    max-width: 200px; /* Definir a largura máxima para as imagens */
+}
+
+.img-fluid {
+margin: 5px;
+cursor: pointer;
+/*animation-name: img-fl;
+animation-duration: 3s, infinite;*/
+/*animation-iteration-count: infinite;*/ /*propriedade que vai alem do animation-duration*/
+}
+/*
+.img-fluid:hover { /*"animações" quando o mouse passar sobre
+    animation-play-state: running; /* Inicia a animação quando o cursor passa por cima 
+}*/
+
+/*Rodapé*/
+footer {
+background-color: #000000;
+text-align: center;
+color: aliceblue;
+padding: 10px;
+}
+
+/* lista desordenada (ul) */
+.opbaixo {
+    list-style-type: none; /* Remover os marcadores padrão da lista */
+    padding: 0;
+    display: flex; /*Alinhar em linha reta as frasses (li/a)*/
+    justify-content: center; /*Alinahr no centro*/
+    
+}
+
+.opbaixo li {
+    width: 50%;
+}
+
+.opbaixo a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* "animação" */
+.opbaixo a:hover {
+    text-decoration:underline;
+}
+
+/*tag que altera a pagina de acordo com o tamanho da tela. ex: de telefone para computador e vice versa*/
+@media screen and (max-height: 450px){ 
+    .Menuoculto {padding-top: 15px;}
+    .Menuoculto a{font-size: 18px;}
+    
+}
+/*animação do carrosel*/ 
+@keyframes animaçao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
+}
+/*
+@keyframes img-fl {
+/*from to*//*para onde começa e para onde for
+ 0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; } 
+
+} */
+ 
+/*.HomePage {
+    display: flex; 
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    margin-bottom: auto; 
+    width: 300px;
+    height: 50px; 
+    justify-content: space-between;
+   } formatações dos botões da homepage */

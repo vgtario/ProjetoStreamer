@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PobreFlix.com.br</title>
+</head>
+<body>
+
+
+    <!-- Aba de navegação feita com a tag aside -->
+    <div class="menu-pesquisa">
+        <aside id="Menuoculto" class="Menuoculto"> <!--a class e para os <a> e id e para o <inside>-->
+            <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+            <!-- Caractere especial: &times; indica a letra X -->
+            <a href="#">Home</a>
+            <a href="#">Animes</a>
+            <a href="#">Mangas</a>
+            <a href="#">Tokusatsu</a>
+            <a href="#">Minha Lista</a>
+            <a href="#">Configurações</a>
+        </aside>
+    </div>
+    <div class="cabeçalho">
+    <!-- Container, conteúdo da página -->
+    <section id="principal"> <!--seção generica-->
+        <span style="font-size:30px;cursor:pointer" onclick="abrirNav()">&#9776;</span>
+        <!-- Caractere especial: &#9776; indica as redicências (...) | cursor:pointer: identificar o cursor e transformá-lo em uma mãozinha -->
+        <p>MENU</p> <!-- Frase abaixo do botão do menu oculto -->
+    </section>
+
+    <h1>OtakuPobre</h1>
+
+    
+        <div id="logotipo">
+          <img id="logo" src="logo/pngaaa.com-1697325.png" alt="logo do site">
+        </div>
+    </div>
+<!--
+<div id="logotipo">
+<img src="logo/download.jpg" alt="logo do site">
+</div> -->
+
+<!--
+    <h1>PobreFlix</h1> -->
+
+    <!--
+    <div class="box-busca">
+        <form> /formulario
+            <input type="text" class="search-input"> /input=entrada, ou seja vai entrar informação
+            <label> /legenda, a parte que da para escrever
+            <button class="botao1">
+                <p>Pesquise   
+                </p>
+            </button>
+        </label>
+        </form>
+    </div>
+-->
+
+
+    <!-- Container da barra de pesquisa -->
+    <div class="box-busca"> <!-- Formulário de pesquisa -->
+        <form>
+            <input type="text" class="search-input" placeholder="Digite o nome do anime">
+            <!-- Campo de entrada de texto para a pesquisa / placeholder valor próprio para deixar uma mensagem dentro da caixa de texto -->
+            <button type="submit" class="search-button">
+                &#128269; <!--caractere especial lupa-->
+            </button>
+        </form>
+    </div>
+
+
+
+    </br>
+    <!--Carrossel-->
+    <section class="galery"> <!--bloco, ou caixa que vai conter o bloco(div) com as fotos-->
+        <div class="fotos">
+            <img src="sliders1200px/84vgg93865d11.webp">
+            <img src="sliders1200px/d7e19f5b4b2b3049cdd1b827fc2dc32f.jpg">
+            <img src="sliders1200px/tanjiro-cosplay-featured-image.avif">
+            <img src="sliders1200px/garotarosa.jpg">
+            <img src="sliders1200px/84vgg93865d11.webp">
+            </div>
+    </section>
+
+
+    <br />
+    <div class="titulo1">
+        <h2>Continuar vendo</h2>
+    </div>
+    <br /> <!--criar um espaçamento/aumentar a margem-->
+    <div class="container">
+        <div class="row"> <!--classe de linha-->
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (2).jfif" class="img-fluid">
+            </div>
+            
+            <div class="col">
+                <img src="imagens/download (4).jfif" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="imagens/download (5).jfif" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="imagens/download (6).jfif" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="imagens/download (7).jfif" class="img-fluid">
+            </div>
+        </div>
+        <br />
+        <div class="titulo2">
+            <h2>Continuar lendo</h2>
+        </div>
+        <br />
+        <div class="row"> <!--classe de linha-->
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (8).jfif" class="img-fluid">
+            </div>
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (9).jfif" class="img-fluid">
+            </div>
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (10).jfif" class="img-fluid">
+            </div>
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (11).jfif" class="img-fluid">
+            </div>
+            <div class="col"> <!--classe de coluna-->
+                <img src="imagens/download (12).jfif" class="img-fluid">
+            </div>
+           
+        </div>
+
+</body>
+
+<div id="rodape">
+<footer>
+    <p>
+        Equipe da OtakuPobre
+    </p>
+    <ul class="opbaixo">
+       <li><a href="#">Configurações</a></li>
+       <li><a href="#">Quem somos nós</a></li>
+       <li><a href="#">Outros site</a></li>
+       <li><a href="#">Ajuda</a></li>
+       </ul>
+</footer>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+
+</html>
+
+
+
+<!-- Código antigo dos botões homepage
+    <div container>
+    <div class="HomePage">
+        <form>
+            <button class="botao2">
+                <p>HOME
+                </p>
+            </button>
+        </form>
+        <form>
+            <button class="botao2">
+                <p>Series
+                </p>
+            </button>
+        </form>
+        <form>
+            <button class="botao2">
+                <p>Animes
+                </p>
+            </button>
+        </form>
+        <form>
+            <button class="botao2">
+                <p>Filmes
+                </p>
+            </button>
+        </form>
+        <form>
+            <button class="botao2">
+                <p>Mangas
+                </p>
+            </button>
+            </form>
+            <form>
+                <button class="botao2">
+                    <p>Tokusatsu
+                    </p>
+                </button>
+            </form>
+    </div>
+</div>
+-->
